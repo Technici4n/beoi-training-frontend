@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 60px;
+  transform: translate(10px, 15px);
+  overflow: visible;
+}
+
+.App-logo-crown {
+  transform-origin: 140px 68px;
+  animation: App-logo-come-down 2s ease 0s;
+}
+
+.App-header {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+#AppMenu {
+  margin: auto;
+}
+
+.TopTable-table {
+  min-width: 400px;
+  overflow-y: scroll;
+}
+
+.TopTable-fullAcCell {
+  background-color: lightgreen;
+}
+.TopTable-fullAcCell > span {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.ProblemList-problem-cell {
+  cursor: pointer;
+}
+
+@keyframes App-logo-come-down {
+  from { transform: translate(0px, -300px); }
+  to { transform: translate(0px, 0px); }
+}
