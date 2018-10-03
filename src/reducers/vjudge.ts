@@ -65,7 +65,7 @@ function handleUpdateData(_: VjudgeState, action: AnyAction): VjudgeState {
 
         userStatus.push({ user, acCount, resultMap: rm });
     }
-    userStatus.sort((a, b) => a.acCount - b.acCount || (a.user.name < b.user.name ? 1 : -1));
+    userStatus.sort((a, b) => b.acCount - a.acCount || (b.user.name < a.user.name ? 1 : -1));
 
     const problemHashmap = {};
     for (const p of payload.problems) {

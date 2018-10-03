@@ -48,7 +48,7 @@ const ConnectedProblemList = (props: IProps) => {
             }
             data.push({ acCount, resultArr, user: us.user });
         }
-        data.sort((a, b) => a.acCount - b.acCount || (a.user.name < b.user.name ? 1 : -1));
+        data.sort((a, b) => b.acCount - a.acCount || (b.user.name < a.user.name ? 1 : -1));
         problemsetData.push(data);
     }
 

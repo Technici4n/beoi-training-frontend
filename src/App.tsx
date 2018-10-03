@@ -18,9 +18,9 @@ const AppMenu = withStyles({
   const { classes } = props;
   return (
     <div id="AppMenu">
-      <Link to="/"><Button className={classes.button} size="large">Top Contestants</Button></Link>
-      <Link to="/problems"><Button className={classes.button} size="large">Problems</Button></Link>
-      <Link to="/submissions"><Button className={classes.button} size="large">Recent Activity</Button></Link>
+      <Link to="/"><Button variant="outlined" className={classes.button} size="large">Top Contestants</Button></Link>
+      <Link to="/problems"><Button variant="outlined" className={classes.button} size="large">Problems</Button></Link>
+      <Link to="/submissions"><Button variant="outlined" className={classes.button} size="large">Recent Activity</Button></Link>
     </div>
   );
 });

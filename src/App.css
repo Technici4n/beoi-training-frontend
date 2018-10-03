@@ -44,6 +44,11 @@
   cursor: pointer;
 }
 
+#AppMenu > a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 @keyframes App-logo-come-down {
   from { transform: translate(0px, -300px); }
   to { transform: translate(0px, 0px); }
